@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <PackageId>OpcUaWrapper</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Jack McDivitt</Authors>
     <Company>Actual AI</Company>
     <Description>A clean, modern wrapper for OPC UA client operations in .NET that simplifies interaction with OPC UA servers. This wrapper provides an intuitive API that reduces the complexity of working with the official OPC UA SDK.</Description>

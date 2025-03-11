@@ -2,11 +2,9 @@
 
 A clean, modern wrapper for OPC UA client operations in .NET that simplifies interaction with OPC UA servers.
 
-<!-- Badges will be enabled once the package is published and CI is set up -->
-<!-- 
-[![Build and Test](https://github.com/ActualAI/OPCUA-Wrapper/actions/workflows/build.yml/badge.svg)](https://github.com/ActualAI/OPCUA-Wrapper/actions/workflows/build.yml)
+<!-- Build badge will be enabled once CI is set up -->
+<!-- [![Build and Test](https://github.com/ActualAI/OPCUA-Wrapper/actions/workflows/build.yml/badge.svg)](https://github.com/ActualAI/OPCUA-Wrapper/actions/workflows/build.yml) -->
 [![NuGet](https://img.shields.io/nuget/v/OpcUaWrapper.svg)](https://www.nuget.org/packages/OpcUaWrapper/)
--->
 
 ## Why This Wrapper?
 
