@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <PackageId>OpcUaWrapper</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Jack McDivitt</Authors>
+    <Company>Actual AI</Company>
+    <Description>A clean, modern wrapper for OPC UA client operations in .NET</Description>
+    <PackageTags>opcua;industrial;automation;iot</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/ActualAI/OPCUA-Wrapper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ActualAI/OPCUA-Wrapper</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+    <PackageReference Include="OPCFoundation.NetStandard.Opc.Ua" Version="1.5.374.27" />
+  </ItemGroup>
+
+</Project> 

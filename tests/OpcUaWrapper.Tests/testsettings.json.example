@@ -1,0 +1,8 @@
+{
+  "ServerUrl": "opc.tcp://localhost:4840",
+  "TestNodeId": "ns=2;s=Demo.Static.Scalar.Double",
+  "TestWritableNodeId": "ns=2;s=Demo.Static.Scalar.Double",
+  "Username": "",
+  "Password": "",
+  "SkipIntegrationTests": false
+} 
