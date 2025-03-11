@@ -7,13 +7,15 @@
     <Version>1.0.0</Version>
     <Authors>Jack McDivitt</Authors>
     <Company>Actual AI</Company>
-    <Description>A clean, modern wrapper for OPC UA client operations in .NET</Description>
-    <PackageTags>opcua;industrial;automation;iot</PackageTags>
+    <Description>A clean, modern wrapper for OPC UA client operations in .NET that simplifies interaction with OPC UA servers. This wrapper provides an intuitive API that reduces the complexity of working with the official OPC UA SDK.</Description>
+    <PackageTags>opcua;industrial;automation;iot;opc;ua;wrapper;client</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/ActualAI/OPCUA-Wrapper</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ActualAI/OPCUA-Wrapper</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Copyright>Copyright © 2023 Actual AI</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
