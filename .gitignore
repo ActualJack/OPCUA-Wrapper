@@ -81,4 +81,7 @@ $RECYCLE.BIN/
 
 # JetBrains Rider
 .idea/
-*.sln.iml 
+*.sln.iml
+
+# Reference files (not for version control)
+PlcCommOpc.cs 

@@ -79,7 +79,7 @@ namespace OpcUaWrapper.Tests
             
             // Assert
             Assert.NotNull(value);
-            Assert.True(statusCode.IsGood());
+            Assert.True(StatusCode.IsGood(statusCode));
         }
         
         [SkippableFact]
@@ -95,7 +95,7 @@ namespace OpcUaWrapper.Tests
             var (value, statusCode) = await _client.ReadValueAsync("ns=999;s=NonExistentNode");
             
             // Assert
-            Assert.False(statusCode.IsGood());
+            Assert.False(StatusCode.IsGood(statusCode));
         }
         
         [SkippableFact]
@@ -112,11 +112,11 @@ namespace OpcUaWrapper.Tests
             var statusCode = await _client.WriteValueAsync(_testWritableNodeId, testValue);
             
             // Assert
-            Assert.True(statusCode.IsGood());
+            Assert.True(StatusCode.IsGood(statusCode));
             
             // Verify the write
             var (readValue, readStatus) = await _client.ReadValueAsync(_testWritableNodeId);
-            Assert.True(readStatus.IsGood());
+            Assert.True(StatusCode.IsGood(readStatus));
             Assert.Equal(testValue, Convert.ToDouble(readValue));
         }
         
@@ -206,16 +206,16 @@ namespace OpcUaWrapper.Tests
             
             // Read
             var (readValue, readStatus) = await _client.ReadValueAsync(_testNodeId);
-            Assert.True(readStatus.IsGood());
+            Assert.True(StatusCode.IsGood(readStatus));
             
             // Write
             double testValue = 99.9;
             var writeStatus = await _client.WriteValueAsync(_testWritableNodeId, testValue);
-            Assert.True(writeStatus.IsGood());
+            Assert.True(StatusCode.IsGood(writeStatus));
             
             // Verify write
             var (verifyValue, verifyStatus) = await _client.ReadValueAsync(_testWritableNodeId);
-            Assert.True(verifyStatus.IsGood());
+            Assert.True(StatusCode.IsGood(verifyStatus));
             Assert.Equal(testValue, Convert.ToDouble(verifyValue));
             
             // Create subscription
